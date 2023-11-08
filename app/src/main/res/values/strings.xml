@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HalamanNavigasi</string>
+    <string name="BackButton">Kembali</string>
+    <string name="Confirm">konfirmasi</string>
+    <string name="Next">Lanjut</string>
+    <string name="Cancel">Batal</string>
+    <string name="Order_summary">Ringkasan Order</string>
+    <string name="Send">Kirim</string>
+    <string name="jambu">jusjambu</string>
+    <string name="mangga">jusmangga\n</string>
+    <string name="apel">jusapel</string>
+    <string name="semangka">jussemangka</string>
+    <string name="melon">jusmelon</string>
+    <string name="subtotal_price">TotalHarga</string>
+    <string name="confirm">konfirmasi</string>
+    <string name="cancel">batal</string>
+    <string name="next">lanjut</string>
+    <string name="quantity">jumlah</string>
+    <string name="flavor">rasa</string>
+    <string name="send">kirim</string>
+    <string name="back_button">tombol_kembali</string>
+</resources>
