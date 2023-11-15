@@ -32,7 +32,6 @@ enum class PengelolaHalaman {
     Home,
     Rasa,
     Summary,
-    Contact,
 
 }
 @Composable
