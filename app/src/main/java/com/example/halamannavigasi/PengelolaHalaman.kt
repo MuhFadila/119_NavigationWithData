@@ -73,13 +73,13 @@ fun EsJuiceApp(
             innerPadding ->
         val uiState by viewModel.stateUI.collectAsState()
         NavHost(navController = navController,
-            startDestination = PengelolaHalaman.Home.name ,
+            startDestination = PengelolaHalaman.Home.name,
             modifier = Modifier.padding(innerPadding)
         ){
             composable(route = PengelolaHalaman.Home.name) {
                 HalamanHome(
                     onNextButtonClicked = {
-                        navController.navigate(PengelolaHalaman.Rasa.name)
+                        navController.navigate(PengelolaHalaman.Pelanggan.name)
                     })
         }
 
