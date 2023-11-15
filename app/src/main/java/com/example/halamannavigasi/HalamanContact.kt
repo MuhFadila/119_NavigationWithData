@@ -1,11 +1,15 @@
 package com.example.halamannavigasi
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -22,7 +26,7 @@ import androidx.compose.ui.unit.dp
 fun HalamanContact(
     onConfirmButtonClicked: (String, String, String) -> Unit,
     onCancelButtonClicked: () -> Unit
-){
+) {
     var nama by remember { mutableStateOf("") }
     var noHp by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
@@ -60,5 +64,25 @@ fun HalamanContact(
                 .fillMaxWidth()
                 .padding(bottom = 16.dp),
         )
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 8.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            OutlinedButton(onClick = onCancelButtonClicked) {
+                Text(text = "Cancel")
+            }
+
+            Button(
+                onClick = {
+                    if (nama.isNotEmpty() && noHp.isNotEmpty() && alamat.isNotEmpty()) {
+                        onConfirmButtonClicked(nama, noHp, alamat)
+                    }
+                }
+            ) {
+                Text(text = "Next")
+            }
+        }
     }
 }
