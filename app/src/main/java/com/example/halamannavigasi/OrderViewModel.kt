@@ -37,12 +37,12 @@ class OrderViewModel : ViewModel() {
 
         return NumberFormat.getNumberInstance().format(kalkulasiHarga)
     }
-    fun setContact(listContact: MutableList<String>){
+    fun setContact(nama: String, nomor: String, alamat:String){
         _stateUI.update { stateSaatIni ->
             stateSaatIni.copy(
-                nama = listContact[0],
-                noHp = listContact[1],
-                alamat = listContact[2]
+                nama = nama,
+                noHp = nomor,
+                alamat = alamat
             )
         }
     }

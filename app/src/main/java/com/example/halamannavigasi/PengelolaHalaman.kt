@@ -32,6 +32,7 @@ enum class PengelolaHalaman {
     Home,
     Rasa,
     Summary,
+    Pelanggan
 
 
 }
@@ -82,7 +83,17 @@ fun EsJuiceApp(
                     })
         }
 
-
+            composable(route = PengelolaHalaman.Pelanggan.name) {
+                HalamanContact(
+                    onConfirmButtonClicked = { nama, noHp, alamat ->
+                        viewModel.setContact(nama, noHp, alamat)
+                        navController.navigate(PengelolaHalaman.Rasa.name)
+                    },
+                    onCancelButtonClicked = {
+                        navController.navigate(PengelolaHalaman.Home.name)
+                    },
+                )
+            }
 
             composable(route = PengelolaHalaman.Rasa.name){
                 val context = LocalContext.current
