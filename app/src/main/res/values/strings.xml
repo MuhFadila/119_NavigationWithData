@@ -11,7 +11,7 @@
     <string name="apel">jusapel</string>
     <string name="semangka">jussemangka</string>
     <string name="melon">jusmelon</string>
-    <string name="subtotal_price">TotalHarga</string>
+    <string name="subtotal_price">Total Harga</string>
     <string name="confirm">konfirmasi</string>
     <string name="cancel">batal</string>
     <string name="next">lanjut</string>
@@ -19,4 +19,9 @@
     <string name="flavor">rasa</string>
     <string name="send">kirim</string>
     <string name="back_button">tombol_kembali</string>
+    <string name="nama">nama</string>
+    <string name="no_hp">No Hp</string>
+    <string name="alamat">Alamat</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
 </resources>

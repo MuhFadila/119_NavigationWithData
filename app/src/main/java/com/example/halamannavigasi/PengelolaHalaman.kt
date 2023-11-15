@@ -31,7 +31,8 @@ import com.example.halamannavigasi.data.SumberData.flavors
 enum class PengelolaHalaman {
     Home,
     Rasa,
-    Summary
+    Summary,
+
 }
 @Composable
 fun EsJuiceAppBar(

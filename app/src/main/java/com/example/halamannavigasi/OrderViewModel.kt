@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import java.text.NumberFormat
 
-private const val HARGA_PER_CUP = 3000
+private const val HARGA_PER_CUP =3000
 
 class OrderViewModel : ViewModel() {
     private val _stateUI = MutableStateFlow(OrderUIState())

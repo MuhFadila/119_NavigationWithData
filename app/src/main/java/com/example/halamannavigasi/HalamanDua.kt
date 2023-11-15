@@ -52,7 +52,7 @@ fun HalamanDua (
             Spacer(modifier =
             Modifier.height(dimensionResource(R.dimen.padding_small)))
             FormatLabelHarga(subtotal = orderUIState.harga,
-                modifier = Modifier.align(Alignment.End))
+                modifier = Modifier.align(Alignment.Start))
 
         }
         Row(
