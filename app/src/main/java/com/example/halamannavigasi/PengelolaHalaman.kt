@@ -32,6 +32,7 @@ enum class PengelolaHalaman {
     Home,
     Rasa,
     Summary,
+    Contact,
 
 }
 @Composable
@@ -79,6 +80,9 @@ fun EsJuiceApp(
                         navController.navigate(PengelolaHalaman.Rasa.name)
                     })
         }
+
+
+
             composable(route = PengelolaHalaman.Rasa.name){
                 val context = LocalContext.current
                 HalamanSatu(
